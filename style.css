@@ -1,9 +1,17 @@
-body {
-  background-image: url("bricks.jpg");
+* {
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  background-image: url("/src/bricks.jpg");
+}
+
 .navbar {
   font-size: 15px;
 }
+
+/* AUTHOR TITLE */
 .cheese {
   color: #fff;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #cc00ff, 0 0 40px #cc00ff,
@@ -16,55 +24,84 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   display: block;
+}
 
-h1 {
+.name {
   font-weight: 200;
   text-align: center;
   text-transform: uppercase;
   font-size: 120px;
   margin-top: 90px;
 }
-h2 {
+
+/* BOOTSTAP FIX */
+h2.name {
   text-transform: uppercase;
   font-weight: 100;
   font-size: 50px;
   text-align: center;
   margin-bottom: 300px;
 }
-h4 {
-  font-size: 100px;
-  font-weight: 50;
-  text-transform: uppercase;
+
+/* ADD A SECTION FOR EACH featured, about, contact */
+
+.content {
   text-align: center;
-  display: block;
 }
-.featured {
+
+/* CLEAN CODE PLEASE */
+.featured,
+.about,
+.contact {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 100px;
+
   color: #fff;
+}
+
+.featured {
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #00aaff, 0 0 40px #00aaff,
     0 0 80px #00aaff, 0 0 90px #00aaff, 0 0 100px #00aaff, 0 0 150px #00aaff;
-  font-weight: 100;
-  text-transform: capitalize;
 }
+
 .about {
-  color: #fff;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #3cbb22, 0 0 40px #3cbb22,
     0 0 80px #3cbb22, 0 0 90px #3cbb22, 0 0 100px #3cbb22, 0 0 150px #3cbb22;
 }
 .contact {
-  color: #fff;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #f1d836, 0 0 40px #f1d836,
     0 0 80px #f1d836, 0 0 90px #f1d836, 0 0 100px #f1d836, 0 0 150px #f1d836;
 }
-@media {
-  (max-width:500px) 
-    .cheese {
+
+.skills {
+  background-color: black;
+  height: 100px;
+  width: cover;
+}
+
+footer {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  display: inline-block;
+  text-align: center;
+}
+
+/* PUT MEDIA QUERY IN SEPARATE css file */
+@media (max-width: 500px) {
+  .cheese {
     width: 500px;
     transform: translateY(120px);
   }
+
   h1 {
     font-size: 120px;
   }
-  h2, h4 {
+  h2,
+  h4 {
     font-size: 45px;
   }
 }
