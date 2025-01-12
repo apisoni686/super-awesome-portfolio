@@ -84,6 +84,7 @@ h2.name {
   /* background-color: white; */
   margin: auto;
   width: 1200px;
+  padding-bottom: 60px;
 }
 
 .icons {
@@ -117,4 +118,38 @@ footer {
   h4 {
     font-size: 45px;
   }
+}
+.content {
+  margin: auto;
+}
+.featured-content {
+  border-radius: 5px;
+  /* padding-bottom: 60px; */
+}
+
+.link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 33px;
+  color: white;
+  margin-bottom: 50px;
+  font-weight: 100;
+  transition: 1s;
+}
+.link:hover {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #00aaff, 0 0 40px #00aaff,
+    0 0 80px #00aaff, 0 0 90px #00aaff, 0 0 100px #00aaff, 0 0 150px #00aaff;
+}
+.featured-photos {
+  filter: grayscale(1) contrast(1.5) brightness(1);
+  opacity: 0.8;
+  border-radius: 10px;
+  border: 3px solid white;
+}
+.featured-photos:hover {
+  filter: grayscale(0);
+  opacity: 1;
+  cursor: pointer;
+  transition: 1s;
 }
