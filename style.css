@@ -153,3 +153,13 @@ footer {
   cursor: pointer;
   transition: 1s;
 }
+.about-me {
+  color: white;
+  margin: 10px;
+  font-size: 25px;
+  font-weight: 100;
+  width: 70%;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
