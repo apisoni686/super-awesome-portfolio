@@ -156,10 +156,25 @@ footer {
 .about-me {
   color: white;
   margin: 10px;
+  font-size: 35px;
+  font-weight: 300;
+  width: 70%;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+.bulk-about {
+  color: white;
+  margin: 10px;
   font-size: 25px;
   font-weight: 100;
   width: 70%;
   text-align: center;
   display: block;
   margin: auto;
+}
+.contact-info {
+  color: white;
+  font-size: 25px;
+  font-weight: 100;
 }
